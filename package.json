@@ -1,0 +1,37 @@
+{
+  "name": "ekpp",
+  "version": "1.0.0",
+  "description": "eKool++ - An unofficial eKool client for desktop by RoLed",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder"
+  },
+  "config": {
+    "forge": "./forge.config.js"
+  },
+  "keywords": [],
+  "author": "RoLed",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^15.0.0",
+    "electron-builder": "^22.13.1"
+  },
+  "dependencies": {
+    "axios": "^0.21.4",
+    
+    "fs.promises": "^0.1.2",
+    "image-charts": "^5.6.17",
+    "md5": "^2.3.0"
+  },
+  "build":{
+    "appId": "com.roled.ekpp",
+    "productName": "eKool++",
+    "win":{
+      "target":"msi",
+      "icon":"icon.ico"
+
+    }
+  }  
+
+}
